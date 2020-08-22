@@ -65,7 +65,7 @@ body {
 	margin: 20px;
 }
 
-.appleSubscription, .googleSubscription {
+.appleSubscriptionContainer, .googleSubscriptionContainer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -101,6 +101,13 @@ span {
 	flex-direction: row wrap;
 	height: 20vh;
 	margin: 0 35px;
+}
+
+.socialNetwork {
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row nowrap;
+	width: 100%;
 }
 
 .subscriptionIcon {
