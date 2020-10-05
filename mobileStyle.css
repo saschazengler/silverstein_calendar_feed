@@ -94,30 +94,9 @@ span {
 	margin: 35px 0;
 }
 
-.socialNetworkContainer {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	flex-direction: row wrap;
-	height: 20vh;
-	margin: 0 35px;
-}
-
-.socialNetwork {
-	display: flex;
-	justify-content: space-around;
-	flex-flow: row nowrap;
-	width: 100%;
-}
-
 .subscriptionIcon {
 	width: 35px;
 	height: 35px;
-}
-
-.socialNetworkIcon {
-	width: 25px;
-	height: 25px;
 }
 
 
@@ -133,9 +112,6 @@ span {
 @media (min-width: 568px) and (orientation: landscape) {
 	.subTitle {
 		width: 375px;
-	}
-	.socialNetworkContainer {
-		height: 30vh;
 	}
 }
 
@@ -164,15 +140,5 @@ span {
 
 	span {
 		font-size: 18px;
-	}
-
-	.socialNetworkContainer {
-		height: 15vh;
-		margin: 0 80px;
-	}
-
-	.socialNetworkIcon {
-		width: 30px;
-		height: 30px;
 	}
 }

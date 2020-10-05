@@ -104,26 +104,7 @@ span {
 	border: 1px solid #FFBCD7;
 }
 
-.socialNetworkContainer {
-	height: 10%;
-	justify-content: center;
-	align-items: flex-end;
-	margin: 30px 0;
-}
-
-.socialNetwork {
-	display: flex;
-	justify-content: space-around;
-	flex-flow: row nowrap;
-	width: 50%;
-}
-
 .subscriptionIcon {
 	width: 35px;
 	height: 35px;
-}
-
-.socialNetworkIcon {
-	width: 30px;
-	height: 30px;
 }
