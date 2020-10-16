@@ -44,7 +44,6 @@ body {
 }
 
 .subTitle {
-	width: 100vw;
 	font-size: 16px;
 	font-style: italic;
 	font-weight: 300;
@@ -57,7 +56,6 @@ body {
 }
 
 .description {
-	width: 88vw;
 	font-size: 19px;
 	font-weight: 300;
 	line-height: 1.5;
@@ -71,6 +69,7 @@ body {
 	align-items: center;
 	flex-flow: column wrap;
 	margin: 80px 0;
+	padding-bottom: 50px;
 }
 
 a {
