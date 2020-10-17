@@ -118,7 +118,7 @@ span:hover {
 	}
 
 	.appleSubscriptionContainer {
-		margin-bottom: 10em;
+		margin-bottom: 8em;
 	}
 
 	.button {
@@ -151,10 +151,11 @@ span:hover {
 	
 	.desktopContainer {
 		flex-flow: column;
+		margin: 5em 0;
 	}
 
 	.appleSubscriptionContainer {
-		margin-bottom: 10em;
+		margin-bottom: 6em;
 	}
 
 	.button {
