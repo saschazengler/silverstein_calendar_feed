@@ -1,163 +1,102 @@
-body {
+:root {
+	--cotton-candy: #ffbcd7;
+	--white: #fdfdfd;
+	font-family: Helvetica, sans-serif;
+	color: var(--white);
+}
+
+* {
 	box-sizing: border-box;
-	overflow-x: hidden;
 	margin: 0;
 	padding: 0;
 }
 
-.backgroundImage {
-	margin: 0;
-	background: url(/img/jellyfish\ _background.png) no-repeat center center fixed;
+.background-image {
+	background: url(/img/jellyfish\ _background.png) no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 }
 
-.headerContainer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: column nowrap;
+.main-container {
+	display: grid;
+	grid-template-columns: 10% 1fr 10%;
+	grid-template-rows: repeat(3, auto);
+	place-items: center;
+	gap: 5rem 0;
 }
 
-.title, .subTitle, .description {
-	font-family: Helvetica, sans-serif;
-	color: #fdfdfd;
+.header-container {
+	max-width: 320px;
+	grid-column-start: 2;
+	grid-column-end: 3;
 }
 
-.title {
-	font-size: 4.5em;
-	letter-spacing: 0.3em;
-	text-indent: 0.3em;
+#title {
+	letter-spacing: 0.5rem;
+	text-align: center;
 	text-transform: uppercase;
-	margin: 1.5em 0 0.2em 0;
+	margin: 4rem 0 1rem 0;
+	padding-left: 0.5rem;
 }
 
-.subTitle {
-	font-size: 1.25em;
+#sub-title {
+	font-size: 0.9rem;
 	font-style: italic;
 	font-weight: 300;
-	letter-spacing: 0.75em;
-	line-height: 2;
+	letter-spacing: 0.4rem;
+	text-align: center;
 	text-transform: uppercase;
-	padding-left: 0.75em;
+	padding-left: 0.4rem;
+
 }
 
-.description {
-	width: 30.5em;
-	font-size: 1.375em;
-	font-weight: 300;
-	line-height: 1.5;
+#description {
+	font-size: 1.2rem;
 	text-align: justify;
-	margin: 1em 0;
+	margin: 4rem 0;
 }
 
-.desktopContainer {
-	display: flex;
-	justify-content: center;
-	margin: 8em 0;
+.apple-subscription-container, .google-subscription-container {
+	grid-column-start: 2;
+	grid-column-end: 3;
 }
 
-.appleSubscriptionContainer, .googleSubscriptionContainer {
-	display: flex;
-	align-items: center;
-	flex-flow: column nowrap;
+.icon {
+	text-align: center;
+}
+
+.subscription-icon {
+	width: 2.2rem;
+	height: 2.2rem;
+}
+
+.button {
+	width: 17rem;
+	height: 3.2rem;
+	line-height: 3.2rem;
+	text-align: center;
+	border: 0.1rem solid var(--white);
+	transition: letter-spacing, border, 0.3s;
+	margin: 3rem 0 6rem 0;
+}
+
+.button:hover {
+	cursor: pointer;
+	letter-spacing: 0.1rem;
+	border-color: var(--cotton-candy);
 }
 
 a {
 	text-decoration: none;
-	color: #FFBCD7;
+	color: var(--cotton-candy);
 }
 
 span {
-	font-family: Helvetica, sans-serif;
-	color: #fdfdfd;
 	display: block;
 	font-size: 1em;
 	font-weight: 300;
+	color: var(--white);
 	text-transform: uppercase;
-}
-
-span:hover {
-	color: #FFBCD7;
-}
-
-.button {
-	width: 23.125em;
-	height: 3.125em;
-	line-height: 3.125em;
-	text-align: center;
-	border: 0.0625em solid #fdfdfd;
-	transition: letter-spacing, border, 0.3s;
-	cursor: pointer;
-	margin: 2em 10em;
-}
-
-.button:hover {
-	letter-spacing: 0.125em;
-	border: 0.0625em solid #FFBCD7;
-}
-
-.subscriptionIcon {
-	width: 2.1em;
-	height: 2.1em;
-}
-
-@media screen
-	and (min-width: 768px)
-	and (max-width: 1024px) {
-	.description {
-		width: 24em;
-		font-size: 1.75em;
-	}
-		
-	.desktopContainer {
-		flex-flow: column;
-	}
-
-	.appleSubscriptionContainer {
-		margin-bottom: 8em;
-	}
-
-	.button {
-		margin: 3em;
-	}
-}
-
-@media screen and (max-width: 767px) {
-	.headerContainer {
-		flex-flow: column wrap;
-	}
-
-	.title {
-		font-size: 1.8em;
-		margin-top: 1.8em;
-	}
-
-	.subTitle {
-		max-width: 20em;
-		font-size: 0.9em;
-		line-height: 1.5em;
-		text-align: center;
-	}
-
-	.description {
-		max-width: 15em;
-		font-size: 1.1em;
-	}
-	
-	.desktopContainer {
-		flex-flow: column;
-		margin: 5em 0;
-	}
-
-	.appleSubscriptionContainer {
-		margin-bottom: 6em;
-	}
-
-	.button {
-		max-width: 15em;
-		margin: 2em 0;
-	}
 }
