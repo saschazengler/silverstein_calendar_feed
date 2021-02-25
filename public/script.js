@@ -35,11 +35,6 @@ async function save_new_click(button_name) {
 
 const url = 'https://ipinfo.io';
 
-let user_data = {
-    city: undefined,
-    country: undefined
-};
-
 
 async function api_connector(url, method) {
     const response = await fetch(url, {
@@ -57,7 +52,7 @@ async function api_connector(url, method) {
 function get_user_location() {
     api_connector(url, 'GET')
         .then(data => {          
-            user_data = {
+            const user_data = {
                 city: data.city,
                 country: data.country,
             };
