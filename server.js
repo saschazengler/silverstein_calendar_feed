@@ -1,5 +1,5 @@
 const express = require('express');
-const { MongoClient, Int32 } = require('mongodb');
+const { MongoClient } = require('mongodb');
 const body_parser = require('body-parser');
 require('dotenv').config();
 
@@ -75,7 +75,7 @@ async function add_new_click(client) {
         };
               
         try {
-            res.json().status(200);  
+            res.status(200);  
         } catch (error) {
             res.status(500).send(error);
         };
@@ -94,7 +94,7 @@ async function add_user_location(client) {
         const city = await client.db(user_information).collection('city').updateOne(query_city, update, options);
 
         try {
-            res.json([country, city]).status(200);
+            res.status(200);
         } catch (error) {
             res.status(500).send(error);
         };
