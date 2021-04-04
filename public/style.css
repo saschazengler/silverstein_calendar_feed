@@ -12,7 +12,7 @@
 }
 
 .background-image {
-	background: url(/img/jellyfish\ _background.png) no-repeat center center;
+	background: url(/asset/img/jellyfish\ _background.png) no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -27,7 +27,7 @@
 	gap: 5rem 0;
 }
 
-.header-container {
+.header__container {
 	max-width: 320px;
 	grid-column-start: 2;
 	grid-column-end: 3;
