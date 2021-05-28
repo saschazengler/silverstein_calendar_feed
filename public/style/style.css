@@ -1,5 +1,5 @@
 :root {
-  --cotton-candy: #ffbcd7;
+  --mustard: #FFDE70;
   --white: #fdfdfd;
   font-family: Helvetica, sans-serif;
   color: var(--white);
@@ -12,8 +12,16 @@
   padding: 0;
 }
 
+*::-moz-selection {
+  color: var(--mustard);
+}
+
+*::selection {
+  color: var(--mustard);
+}
+
 .background-image {
-  background: url("/asset/img/jellyfish _background.png") no-repeat center center;
+  background: url("/asset/img/jellyfish_background.png") no-repeat center center;
   background-size: cover;
 }
 
@@ -36,6 +44,7 @@
 }
 
 #title {
+  color: var(--mustard);
   letter-spacing: 0.5rem;
   text-align: center;
   text-transform: uppercase;
@@ -88,13 +97,19 @@
 
 .button:hover {
   cursor: pointer;
+  -webkit-box-shadow: 0 0 0.5rem var(--mustard);
+          box-shadow: 0 0 0.5rem var(--mustard);
   letter-spacing: 0.1rem;
-  border-color: var(--cotton-candy);
+  border-color: var(--mustard);
 }
 
 a {
   text-decoration: none;
-  color: var(--cotton-candy);
+  color: var(--mustard);
+}
+
+a:hover {
+  text-shadow: 0 0 0.5rem var(--mustard);
 }
 
 span {
